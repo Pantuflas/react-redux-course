@@ -33,6 +33,17 @@ class App extends Component {
       persons: persons
     })
   }
+
+  //Method to show when the component is mounted
+  componentDidMount() {
+    console.log("component mounted");
+  }
+
+  //Method that shows in console everytime the component updates, prints previous props and state
+  componentDidUpdate(prevProps, prevState) {
+    console.log("components updated");
+    console.log(prevProps, prevState);
+  }
   render() {
     return (
       <div className="App">
